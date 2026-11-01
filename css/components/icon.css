@@ -1,0 +1,13 @@
+/* Ikon SVG (dari sprite di index.html) */
+.icon {
+  width: 1rem;
+  height: 1rem;
+  flex-shrink: 0;
+  fill: currentColor;
+}
+
+.icon--sm { width: 0.875rem; height: 0.875rem; }
+.icon--xs { width: 0.75rem;  height: 0.75rem; }
+
+/* Warna brand */
+.icon--netlify { color: #00c7b7; }

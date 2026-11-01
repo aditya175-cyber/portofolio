@@ -1,0 +1,39 @@
+/* Contact */
+.contact {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+.contact__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.contact__text {
+  margin-bottom: 1.5rem;
+  font-size: 0.75rem;
+  line-height: 1.625;
+  font-weight: 400;
+  color: var(--color-text-muted);
+}
+
+.contact__location {
+  font-size: 0.75rem;
+  line-height: 1rem;
+  color: var(--color-text-dim);
+}
+
+.contact__location span {
+  color: var(--color-text);
+}
+
+@media (min-width: 768px) {
+  .contact {
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+  }
+
+  .contact__info { grid-column: span 5; }
+  .contact__form { grid-column: span 7; }
+}
